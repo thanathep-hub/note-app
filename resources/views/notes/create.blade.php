@@ -13,11 +13,12 @@
                     <div class="space-y-4">
                         <div>
                             <label for="title" class="block text-sm font-medium text-gray-700 mb-1">Title</label>
-                            <input type="text" name="title" id="title"
-                                value="{{ old('title') }}
-                                    class="bg-gray-50 border
+                            <input type="text" name="title" id="title" value="{{ old('title') }}"
+                                class="bg-gray-50 border
                                 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500
-                                block w-full p-2.5" placeholder="John" required />
+                                block w-full p-2.5"
+                                placeholder="John" required />
+
                             @error('title')
                                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
