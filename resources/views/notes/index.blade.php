@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <div
-                            class="flex justify-end gap-2 p-4 sm:pr-6 border-neutral-200 border-t sm:border-t-0 sm:border-l">
+                            class="flex justify-end gap-2 p-4 sm:pr-6 border-neutral-100 border-t sm:border-t-0 sm:border-l">
                             <a href="{{ route('notes.edit', $note) }}"
                                 class="inline-flex items-center px-3 py-1.5 border border-gray-300 text-sm font-medium rounded text-gray-700 bg-white hover:bg-gray-50">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none"

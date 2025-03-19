@@ -4,7 +4,7 @@
 @section('content')
     <div class="max-w-2xl mx-auto">
         <div class="bg-white shadow-md rounded-lg">
-            <div class="p-6 border-b">
+            <div class="p-6 border-b border-gray-100">
                 <h2 class="text-xl font-semibold">Create New Note</h2>
             </div>
             <div class="p-6">
