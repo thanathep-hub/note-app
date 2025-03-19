@@ -14,23 +14,17 @@
                         <div>
                             <label for="title" class="block text-sm font-medium text-gray-700 mb-1">Title</label>
                             <input type="text" name="title" id="title" value="{{ old('title') }}"
-                                class="bg-gray-50 border
-                                border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500
-                                block w-full p-2.5"
-                                placeholder="John" required />
-
+                                class="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                                required>
                             @error('title')
                                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
                         </div>
 
                         <div>
-
-
-                            <label for="content"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Content</label>
+                            <label for="content" class="block text-sm font-medium text-gray-700 mb-1">Content</label>
                             <textarea name="content" id="content" rows="8"
-                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+                                class="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
                                 required>{{ old('content') }}</textarea>
                             @error('content')
                                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
