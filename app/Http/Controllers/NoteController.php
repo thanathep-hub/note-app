@@ -56,4 +56,9 @@ class NoteController extends Controller
         return redirect()->route('notes.index')
             ->with('success', 'Note deleted successfully.');
     }
+
+    public function show(Note $note)
+    {
+        return view('notes.show', compact('note'));
+    }
 }

@@ -33,14 +33,26 @@
                 <div class="bg-white rounded-lg shadow-md w-full">
                     <div class="flex flex-col sm:flex-row sm:items-center">
                         <div class="flex-grow p-4 sm:p-6">
-                            <h3 class="text-lg font-medium">{{ $note->title }}</h3>
+                            <a href="{{ route('notes.show', $note) }}" class="hover:text-blue-600">
+                                <h3 class="text-lg font-medium">{{ $note->title }}</h3>
+                            </a>
                             <p class="mt-2 text-gray-500 line-clamp-2">{{ $note->content }}</p>
                             <div class="mt-2 text-xs text-gray-500">
                                 {{ $note->updated_at->format('M d, Y') }}
                             </div>
                         </div>
-                        <div
-                            class="flex justify-end gap-2 p-4 sm:pr-6 border-neutral-100 border-t sm:border-t-0 sm:border-l">
+                        <div class="flex justify-end gap-2 p-4 sm:pr-6 border-t sm:border-t-0 sm:border-l">
+                            <a href="{{ route('notes.show', $note) }}"
+                                class="inline-flex items-center px-3 py-1.5 border border-gray-300 text-sm font-medium rounded text-gray-700 bg-white hover:bg-gray-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                View
+                            </a>
                             <a href="{{ route('notes.edit', $note) }}"
                                 class="inline-flex items-center px-3 py-1.5 border border-gray-300 text-sm font-medium rounded text-gray-700 bg-white hover:bg-gray-50">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none"
